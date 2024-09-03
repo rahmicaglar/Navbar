@@ -1,0 +1,60 @@
+/* Diagonal Navbar Stil */
+
+.diagonal-navbar {
+    background: #2c3e50;
+    padding: 20px 0;
+    position: relative;
+    overflow: hidden;
+    transform: skewY(-15deg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+
+.diagonal-navbar .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-brand-wrapper {
+    transform: skewY(15deg);
+}
+
+.diagonal-navbar .navbar-brand {
+    font-family: 'Georgia', serif;
+    font-size: 1.8rem;
+    color: #ecf0f1;
+    font-weight: bold;
+    transform: rotate(-15deg);
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    transform: skewY(15deg);
+}
+
+.nav-item {
+    font-size: 1.1rem;
+    color: #ecf0f1;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    transform: rotate(-15deg);
+}
+
+.nav-item:hover {
+    color: #3498db;
+    transform: translateY(-5px) rotate(-15deg);
+}
+
+body {
+    background-color: #ecf0f1;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding-top: 140px;
+    /* Diagonal navbar ile içerik çakışmasını önlemek için üstten boşluk */
+}

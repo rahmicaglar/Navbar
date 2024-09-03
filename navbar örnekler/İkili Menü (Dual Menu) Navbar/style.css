@@ -1,0 +1,45 @@
+/* Üst Menü Stil */
+
+.navbar-light.bg-light {
+    padding: 5px 0;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light .navbar-text {
+    color: #333;
+}
+
+.navbar-light .navbar-text:hover {
+    color: #007bff;
+}
+
+
+/* Alt Menü Stil */
+
+.navbar-dark.bg-dark {
+    margin-top: -1px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: #ddd;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding-top: 112px;
+    /* İkili menü ile içeriğin çakışmaması için üstten padding ekliyoruz */
+}

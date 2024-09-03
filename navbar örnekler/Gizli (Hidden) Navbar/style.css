@@ -1,0 +1,34 @@
+/* Gizli Navbar Stil */
+
+#hiddenNavbar {
+    transition: top 0.3s ease-in-out;
+    top: -56px;
+    /* Navbar başlangıçta gizli */
+}
+
+body.scrolled #hiddenNavbar {
+    top: 0;
+    /* Sayfa kaydırıldığında navbar görünür hale gelir */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: #ddd;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding-top: 56px;
+    /* Navbar'ın üzerindeki içerikle çakışmaması için üstten padding ekliyoruz */
+}

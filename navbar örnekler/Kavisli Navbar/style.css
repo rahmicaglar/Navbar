@@ -1,0 +1,65 @@
+/* Kavisli Navbar Stil */
+
+.curved-navbar {
+    background: linear-gradient(135deg, #3498db 0%, #9b59b6 100%);
+    padding: 20px 0;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.curved-navbar::before {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150%;
+    height: 80px;
+    background: inherit;
+    border-radius: 100%;
+    box-shadow: 0 -20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.curved-navbar .navbar-brand {
+    font-family: 'Georgia', serif;
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: bold;
+    padding-left: 20px;
+    z-index: 2;
+    position: relative;
+}
+
+.curved-navbar .nav-items {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    z-index: 2;
+    position: relative;
+}
+
+.curved-navbar .nav-items a {
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.curved-navbar .nav-items a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-5px);
+    color: #ffeb3b;
+}
+
+body {
+    background-color: #ecf0f1;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}

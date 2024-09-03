@@ -1,0 +1,42 @@
+/* Transparent ve Blur Efektli Navbar Stil */
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Transparan arka plan */
+    backdrop-filter: blur(10px);
+    /* Arka planı bulanıklaştırma */
+    -webkit-backdrop-filter: blur(10px);
+    /* Safari için destek */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Hafif bir gölge */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.nav-link {
+    color: #ddd;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #fff;
+    /* Link üzerine gelindiğinde beyaz renk */
+}
+
+body {
+    background-image: url('https://via.placeholder.com/1920x1080');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding-top: 56px;
+    /* Navbar'ın üzerindeki içerikle çakışmaması için üstten padding ekliyoruz */
+}
+
+.container {
+    color: #fff;
+}

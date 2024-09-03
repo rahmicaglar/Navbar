@@ -1,0 +1,62 @@
+/* Asimetrik Navbar Stil */
+
+.asymmetric-navbar {
+    background-color: #2c3e50;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.asymmetric-navbar .navbar-brand {
+    font-family: 'Georgia', serif;
+    font-size: 1.8rem;
+    color: #ecf0f1;
+    font-weight: bold;
+}
+
+.asymmetric-navbar .nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.asymmetric-navbar .nav-item-small {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    margin-right: 10px;
+    color: #ecf0f1;
+    background-color: #3498db;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.asymmetric-navbar .nav-item-medium {
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    margin-right: 15px;
+    color: #ecf0f1;
+    background-color: #1abc9c;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.asymmetric-navbar .nav-item-large {
+    font-size: 1.3rem;
+    padding: 16px 25px;
+    margin-right: 20px;
+    color: #ecf0f1;
+    background-color: #e74c3c;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.asymmetric-navbar .nav-items a:hover {
+    background-color: #34495e;
+}
+
+body {
+    background-color: #ecf0f1;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}

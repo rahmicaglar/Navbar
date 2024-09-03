@@ -1,0 +1,41 @@
+/* Navbar Stil */
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Yarı transparan arka plan */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Hafif bir gölge */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #f8f9fa;
+}
+
+.nav-link {
+    color: #f8f9fa;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff;
+    /* Link üzerine gelindiğinde mavi renk */
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+
+/* Ekstra içeriğin üst kısımda gizlenmesi için padding ekleyin */
+
+.container {
+    padding-top: 60px;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}

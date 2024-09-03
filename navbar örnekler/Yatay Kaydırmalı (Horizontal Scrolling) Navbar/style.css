@@ -1,0 +1,39 @@
+/* Yatay Kaydırmalı Navbar Stil */
+
+.horizontal-scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    /* Yatay kaydırmayı etkinleştirir */
+    -webkit-overflow-scrolling: touch;
+    /* Mobil cihazlarda daha yumuşak kaydırma */
+}
+
+.horizontal-scroll .nav-item {
+    flex: 0 0 auto;
+    /* Menü öğeleri sabit genişlikte olacak şekilde düzenlendi */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: #ddd;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+    /* Metin kaymasını engeller */
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding-top: 56px;
+    /* Navbar'ın üzerindeki içerikle çakışmaması için üstten padding ekliyoruz */
+}

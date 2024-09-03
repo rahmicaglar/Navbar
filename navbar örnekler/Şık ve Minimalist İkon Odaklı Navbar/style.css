@@ -1,0 +1,39 @@
+/* İkon Odaklı Navbar Stil */
+
+.navbar {
+    padding: 15px;
+}
+
+.navbar .navbar-brand {
+    font-family: 'Georgia', serif;
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-left: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd700;
+    transform: scale(1.1);
+}
+
+.container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Arial', sans-serif;
+}
+
+p {
+    font-size: 1.2rem;
+    font-family: 'Arial', sans-serif;
+}

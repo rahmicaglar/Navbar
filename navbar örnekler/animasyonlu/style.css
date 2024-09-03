@@ -1,0 +1,63 @@
+/* Navbar Stil */
+
+.navbar {
+    background-color: #343a40;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #f8f9fa;
+}
+
+.nav-link {
+    color: #f8f9fa;
+    position: relative;
+    padding-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+
+/* Linkler üzerine gelindiğinde underline animasyonu */
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #007bff;
+    transition: width 0.3s ease, right 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    right: 0;
+}
+
+
+/* Navbar linkleri arasında animasyonlu geçiş */
+
+.nav-link:hover {
+    transform: translateY(-3px);
+}
+
+
+/* Ekstra içeriğin üst kısımda gizlenmesi için padding ekleyin */
+
+.container {
+    padding-top: 60px;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
